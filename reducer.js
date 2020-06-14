@@ -32,7 +32,7 @@ const reducer = (state = initialState, action) => {
         ...state,
         search: action.payload,
         filteredArtworks: state.artworks.filter((data) =>
-          data.artworkTitle.includes(action.payload)
+          data.artworkTitle.toLowerCase().includes(action.payload.toLowerCase())
         ),
       };
     case SET_FAVORITE:

@@ -25,6 +25,7 @@ export const ArtworkListComponent = ({
     getArtworks();
     loadFavoritesFromLocalStorage();
   }, []);
+  //console.log(artworks)
   return (
     <ArtworkList>
       <h1>
